@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import {Routes, Route} from 'react-router-dom'
+import Landing from './pages/Landing/Landing';
+import Login from './pages/Auth/Login';
+import Register from './pages/Auth/Register';
+import About from './pages/About/About';
+import TodoList from './pages/Todos/TodoList';
+import { Toaster } from 'react-hot-toast';
+import HomePage from './pages/Home/HomePage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/todos" element={<TodoList />} />
+      </Routes>
+      <Toaster />
     </div>
   );
 }
