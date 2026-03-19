@@ -1,4 +1,4 @@
-import axios from "axios";
+import API from "./api";
 
 //get user token
 const user = JSON.parse(localStorage.getItem("todoapp") || "null");
