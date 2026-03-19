@@ -1,12 +1,14 @@
 import axios from "axios";
 
 //get user token
-const user = JSON.parse(localStorage.getItem("todoapp"));
+const user = JSON.parse(localStorage.getItem("todoapp") || "null");
 
 const baseUrl = process.env.REACT_APP_BASEURL;
 
 //deafult auth header
-axios.defaults.headers.common["Authorization"] = `Bearer ${user.token}`;
+if (user && user.token) {
+  axios.defaults.headers.common["Authorization"] = `Bearer ${user.token}`;
+}
 
 //create todo
 const createTodo = (data) => {
