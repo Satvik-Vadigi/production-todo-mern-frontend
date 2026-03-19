@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# 🚀 MERN Todo App – Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🌐 **Live Demo**
+https://production-todo-mern-frontend-satvik-vadigis-projects.vercel.app/
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📌 Overview
 
-### `npm start`
+A full-stack Todo application built using the MERN stack with authentication and CRUD functionality.
+This frontend communicates with a backend API deployed on Railway.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ⚙️ Tech Stack
 
-### `npm test`
+* React.js
+* Axios
+* React Router DOM
+* Bootstrap
+* React Hot Toast
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ✨ Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* 🔐 User Authentication (Register / Login)
+* 📝 Create, Read, Update, Delete Todos
+* 💾 Persistent login using LocalStorage
+* 🔒 Protected routes
+* ⚡ Fast and responsive UI
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🔗 Backend API
 
-### `npm run eject`
+https://production-server-todo-mern.up.railway.app
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+👉 Backend Repo:
+https://github.com/Satvik-Vadigi/mern-todo-backend
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🚀 Deployment
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* Frontend → Vercel
+* Backend → Railway
+* Uptime Monitoring → UptimeRobot
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🧠 Architecture
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* REST API communication using Axios
+* Token-based authentication
+* Modular service-based structure
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📸 Screenshots
+<img width="1878" height="832" alt="home" src="https://github.com/user-attachments/assets/884dec47-158d-4670-9265-f4fe1aa47d86" />
+<img width<img width="502" height="592" alt="Register" src="https://github.com/user-attachments/assets/b51b4697-0cf4-403a-9430-6e358884dc5e" />
+<img width="507" height="528" alt="Login" src="https://github.com/user-attachments/assets/47bdaf6a-f616-4637-a0f2-a1d652801c28" />
+<img width="1917" height="862" alt="Todo-List" src="https://github.com/user-attachments/assets/7503f531-bbf4-4d61-83a4-7875df2861a1" />
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## ⚠️ Note
 
-### Making a Progressive Web App
+Backend is hosted on Railway and monitored to avoid cold start delays.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 👨‍💻 Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Satvik Vadigi
