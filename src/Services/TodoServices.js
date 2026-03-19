@@ -1,34 +1,30 @@
 import API from "./api";
 
-//get user token
-const user = JSON.parse(localStorage.getItem("todoapp") || "null");
-
-const baseUrl = process.env.REACT_APP_BASEURL;
-
-//deafult auth header
-if (user && user.token) {
-  axios.defaults.headers.common["Authorization"] = `Bearer ${user.token}`;
-}
-
 //create todo
 const createTodo = (data) => {
-  return axios.post(`${baseUrl}/api/v1/todo/create`, data);
+  return API.post("/api/v1/todo/create", data);
 };
 
 //get all todo
 const getAllTodo = (id) => {
-  return axios.post(`${baseUrl}/api/v1/todo/getAll/${id}`);
+  return API.post(`/api/v1/todo/getAll/${id}`);
 };
 
 //delete todo
 const deleteTodo = (id) => {
-  return axios.delete(`${baseUrl}/api/v1/todo/delete/${id}`);
+  return API.delete(`/api/v1/todo/delete/${id}`);
 };
 
 //update todo
 const updateTodo = (id, data) => {
-  return axios.patch(`${baseUrl}/api/v1/todo/update/${id}`, data);
+  return API.patch(`/api/v1/todo/update/${id}`, data);
 };
 
-const TodoServices = { createTodo, getAllTodo, deleteTodo, updateTodo };
+const TodoServices = {
+  createTodo,
+  getAllTodo,
+  deleteTodo,
+  updateTodo,
+};
+
 export default TodoServices;
