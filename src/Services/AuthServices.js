@@ -1,13 +1,13 @@
-import axios from "axios";
+import API from "./api";
 
-const baseUrl = process.env.REACT_APP_BASEURL;
-
+// register
 const registerUser = (data) => {
-  return axios.post(`${baseUrl}/api/v1/user/register`, data);
+  return API.post("/api/v1/user/register", data);
 };
 
+// login
 const loginUser = (data) => {
-  return axios.post(`${baseUrl}/api/v1/user/login`, data);
+  return API.post("/api/v1/user/login", data);
 };
 
 const AuthServices = {
